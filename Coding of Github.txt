@@ -1,0 +1,38 @@
+// 1 
+//create a invisible .git file in own folder
+
+$ git init
+Initialized empty Git repository in C:/Users/User/IdeaProjects/sms/.git/
+
+// 2
+// All the files are in Staging Area
+
+$ git add .
+
+// 3 
+// All files are push in github repository
+
+$ git commit -m "Initial commit"
+
+// 4 
+// Adding Remote Origin
+
+$ git remote add origin git@github.com:NextGenGk/StudentManagement.git
+
+// 5 
+// Paste the text below, substituting in GitHub email address
+
+$ ssh-keygen -t ed25519 -C "gauravkumar123@gmail.com"
+
+[(Your public key has been saved in /c/Users/User/.ssh/id_ed25519.pub)]
+/c/Users/User/.ssh/id_ed25519.pub ---- paste Public key On cat
+
+// 6 
+// Add cat + public key
+
+$ cat  /c/Users/User/.ssh/id_ed25519.pub
+
+// 7 
+All files are push on our Github Repository
+
+$ git push origin master
